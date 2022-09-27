@@ -1,99 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
 </head>
+
 <body>
     <table style="width:100%;height:100%;font-family:'Times New Roman';border: 2px solid black;">
-        <thead>
-            <tr>
-                <th colspan="2" style="font-size: larger;">Registration Form</th>
-            </tr>
-        </thead>
-        <tbody>
-           <tr>
-            <td style="width:30%;border: 1px solid black;">
-                <label for="username">Enter Name</label>
-            </td>
-            <td style="width:70%;border: 1px solid black;">
-                <input type="text" id="username" name="username">
-            </td>
-           </tr> 
+        <form action="form1.php" method="post">
+            <thead>
+                <tr>
+                    <th colspan="2" style="font-size: larger;">Registration Form</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="width:30%;border: 1px solid black;">
+                        <label for="username">Enter Name</label>
+                    </td>
+                    <td style="width:70%;border: 1px solid black;">
+                        <input type="text" id="username" name="username">
+                    </td>
+                </tr>
 
-           <tr>
-            <td style="width:30%;border: 1px solid black;">
-                <label for="password">Enter Password</label>
-            </td>
-            <td style="width:70%;border: 1px solid black;">
-                <input type="password" id="password" name="password">
-            </td>
-           </tr>
+                <tr>
+                    <td style="width:30%;border: 1px solid black;">
+                        <label for="password">Enter Password</label>
+                    </td>
+                    <td style="width:70%;border: 1px solid black;">
+                        <input type="password" id="password" name="password">
+                    </td>
+                </tr>
 
-           <tr>
-            <td style="width:30%;border: 1px solid black;">
-                <label for="address">Enter Address</label>
-            </td>
-            <td style="width:70%;border: 1px solid black;">
-                <textarea type="text" id="address" name="address"></textarea>
-            </td>
-           </tr>
+                <tr>
+                    <td style="width:30%;border: 1px solid black;">
+                        <label for="address">Enter Address</label>
+                    </td>
+                    <td style="width:70%;border: 1px solid black;">
+                        <textarea type="text" id="address" name="address"></textarea>
+                    </td>
+                </tr>
 
-           <tr>
-            <td style="width:30%;border: 1px solid black;">
-                <label for="games">Select Game</label>
-            </td>
-            <td style="width:70%;border: 1px solid black;">
-                <input type="checkbox" id="games" name="games" value="Hockey"><label for="games">Hockey</label><br>
-                <input type="checkbox" id="games" name="games" value="Football"><label for="games">Football</label><br>
-                <input type="checkbox" id="games" name="games" value="Badminton"><label for="games">Badminton</label><br>
-                <input type="checkbox" id="games" name="games" value="Cricket"><label for="games">Cricket</label><br>
-                <input type="checkbox" id="games" name="games" value="Volleyball"><label for="games">Volleyball</label><br>
-            </td>
-           </tr>
-           <tr>
-            <td style="width: 30%;border: 1px solid black;">
-                <label for="gender">Gender</label>
-            </td>
-            <td style="width:70%;border:1px solid black;">
-                <input type="radio" name="gender" id="gender" checked><label for="gender">Male</label>
-                <input type="radio" name="gender" id="gender"><label for="gender">Female</label>
-            </td>
-            </tr>
-            <tr>
-                <td style="width:30%;border:1px solid black;">
-                    <label for="age">Select your age</label>
-                </td>
-                <td style="width:70%;border:1px solid black;">
-                    <select name="age" id="age">
-                        <option value="20">Select</option>
-                        <option value="25">entre 20 et 25</option>
-                        <option value="30">entre 25 et 30</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td style="width:30%;border:1px solid black;">
-                    <label for="photo">Select Photo</label>
-                </td>
-                <td style="width:70%;border:1px solid black;">
-                    <input type="file" id="photo" name="photo" accept="image/png"><label for="photo"></label>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2" style="width:100%;border:1px solid black;">
-                    <input type="button"  value="Click Me" style="width:32%;height:25px;">
-                    <input type="reset" value="Réinitialiser" style="width:32%;height:25px;">
-                    <input type="submit" value="Submit Form" style="width:32%;height:25px;">
-                </td>
-            </tr>
-        </tbody>
-    
-    
-    
-    
+                <tr>
+                    <td style="width:30%;border: 1px solid black;">
+                        <label for="games">Select Game</label>
+                    </td>
+                    <td style="width:70%;border: 1px solid black;">
+                        <input type="checkbox" id="games" name="games" value="Hockey"><label
+                            for="games">Hockey</label><br>
+                        <input type="checkbox" id="games" name="games" value="Football"><label
+                            for="games">Football</label><br>
+                        <input type="checkbox" id="games" name="games" value="Badminton"><label
+                            for="games">Badminton</label><br>
+                        <input type="checkbox" id="games" name="games" value="Cricket"><label
+                            for="games">Cricket</label><br>
+                        <input type="checkbox" id="games" name="games" value="Volleyball"><label
+                            for="games">Volleyball</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width: 30%;border: 1px solid black;">
+                        <label for="gender">Gender</label>
+                    </td>
+                    <td style="width:70%;border:1px solid black;">
+                        <input type="radio" name="gender" id="gender" checked><label for="gender">Male</label>
+                        <input type="radio" name="gender" id="gender"><label for="gender">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:30%;border:1px solid black;">
+                        <label for="age">Select your age</label>
+                    </td>
+                    <td style="width:70%;border:1px solid black;">
+                        <select name="age" id="age">
+                            <option value="20">Select</option>
+                            <option value="25">entre 20 et 25</option>
+                            <option value="30">entre 25 et 30</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="width:30%;border:1px solid black;">
+                        <label for="photo">Select Photo</label>
+                    </td>
+                    <td style="width:70%;border:1px solid black;">
+                        <input type="file" id="photo" name="photo" accept="image/png"><label for="photo"></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="width:100%;border:1px solid black;">
+                        <input type="button" value="Click Me" style="width:32%;height:25px;">
+                        <input type="reset" value="Réinitialiser" style="width:32%;height:25px;">
+                        <input type="submit" value="Submit Form" style="width:32%;height:25px;">
+                    </td>
+                </tr>
+            </tbody>
+
+
+
+        </form>
     </table>
 </body>
+
 </html>
